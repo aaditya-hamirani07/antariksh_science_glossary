@@ -1,30 +1,22 @@
-````markdown
 # 🔭 Antariksh Science Glossary
 
-A simple command-line glossary built to store and manage technical and scientific terms encountered while reading research papers.
-
-## 📌 Why This Project?
-
-While reading research papers, scientific terms often have meanings that are more specific than their general definitions found online.
-
-This project was created for the **Antariksh Science Department** to keep a personal collection of technical terms and their research-specific meanings in one place.
-
-Instead of repeatedly searching for the same terminology, terms can be added, searched, and reviewed directly from the terminal.
+A simple command-line Python glossary for storing and searching scientific and technical terms encountered while reading research papers.
 
 ## ✨ Features
 
 - ➕ Add new scientific or technical terms
 - 🔎 Search for the meaning of a term
-- 📚 Display all stored glossary terms
-- 🔤 Automatically sort terms alphabetically
-- 🚫 Prevent duplicate terms from being added
-- 💾 Store glossary data permanently in a CSV file
+- 📚 Display all glossary terms
+- 🔤 Sort terms alphabetically
+- 🚫 Avoid duplicate entries
+- 💾 Store entries permanently in a CSV file
 - 💻 Simple command-line interface
 
 ## 🛠️ Tech Stack
 
 - **Language:** Python
-- **Data Storage:** CSV
+- **Module:** `csv`
+- **Storage:** CSV
 
 ## 📂 Project Structure
 
@@ -35,120 +27,110 @@ antariksh_science_glossary/
 ├── glossary.csv
 ├── .gitignore
 └── README.md
-````
+```
 
 ## 🚀 Getting Started
 
-### 1. Clone the Repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/aaditya-hamirani07/antariksh_science_glossary.git
 ```
 
-### 2. Navigate to the Project
+### Open the project
 
 ```bash
 cd antariksh_science_glossary
 ```
 
-### 3. Run the Program
+### Run the program
 
 ```bash
 python glossary.py
 ```
 
-## 🖥️ How It Works
+## 🖥️ Usage
 
-After running the program, you get a menu with four options:
-
-```text
-Enter 1 to add word in glossary
-2 for knowing words meaning
-3 to list all word
-4 to exit
-```
-
-### 1️⃣ Add a Word
-
-Enter a scientific or technical term and its meaning.
+When the program starts, you can choose from the available options:
 
 ```text
-Add word : spectroscopy
-Add meaning : The study of how matter interacts with electromagnetic radiation.
-
-Added 'spectroscopy' to glossary.
+1. Add word in glossary
+2. Find word meaning
+3. List all words
+4. Exit
 ```
 
-If the term already exists, the program displays its stored meaning instead of adding a duplicate.
+### Add a Word
 
-### 2️⃣ Find a Meaning
+Enter a scientific term and its meaning. The term is saved to the glossary CSV file.
 
-Search for a previously stored term.
+### Find a Meaning
 
-```text
-Enter word to find meaning : spectroscopy
+Enter a stored term to retrieve its meaning.
 
-spectroscopy : The study of how matter interacts with electromagnetic radiation.
-```
+### List All Words
 
-### 3️⃣ List All Terms
+Displays the terms currently stored in the glossary in alphabetical order.
 
-Displays all stored terms and their meanings in alphabetical order.
+### Exit
 
-```text
-GLOSSARY WORDS
-
-EXOPLANET : A planet that exists outside our solar system.
-
-SPECTROSCOPY : The study of how matter interacts with electromagnetic radiation.
-```
-
-### 4️⃣ Exit
-
-Closes the glossary program.
+Closes the program.
 
 ## 💾 Data Storage
 
-Glossary entries are stored in `glossary.csv`.
-
-The CSV follows this structure:
-
-```text
-WORD,MEANING
-```
+All glossary entries are stored in `glossary.csv`.
 
 Example:
 
-```text
+```csv
+WORD,MEANING
 Exoplanet,A planet outside our solar system
-Spectroscopy,Study of interaction between matter and electromagnetic radiation
+Spectroscopy,The study of how matter interacts with electromagnetic radiation
 ```
 
-This allows the glossary to retain terms even after the program is closed.
+Because the data is stored in a CSV file, entries remain available when the program is run again.
 
 ## 🧠 Concepts Used
 
-This project was built using basic Python concepts including:
+This project uses basic Python concepts such as:
 
-* Functions
-* Dictionaries
-* Loops
-* Conditional statements
-* Pattern matching with `match`
-* File handling
-* CSV processing
-* User input
-* Sorting
-* String manipulation
+- Functions
+- Dictionaries
+- Loops
+- Conditional statements
+- Pattern matching
+- File handling
+- CSV processing
+- User input
+- Sorting
+- String manipulation
 
-## 🎯 Use Case
+## 🎯 Purpose
 
-This project is particularly useful for:
+The glossary was created for maintaining scientific terminology encountered during research-paper reading, particularly in areas related to **space science, astronomy, and scientific research**.
 
-* 📄 Research paper reading
-* 🔭 Astronomy and space science terminology
-* 🧪 Scientific terminology
-* 📚 Personal study notes
-* 📝 Maintaining a research vocabulary
+It provides a quick way to record unfamiliar terms and refer back to their meanings later.
 
-The glossary can also be expanded over time as new research papers introduce unfamiliar terminology.
+## 🔮 Future Improvements
+
+- [ ] Add categories for different scientific fields
+- [ ] Add edit and delete functionality
+- [ ] Add case-insensitive search
+- [ ] Add partial-word search
+- [ ] Add examples for each term
+- [ ] Add timestamps
+- [ ] Add a GUI
+- [ ] Convert it into a web-based glossary
+
+## 👨‍💻 Author
+
+**Aaditya Hamirani**
+
+B.Tech Artificial Intelligence & Machine Learning  
+Dwarkadas J. Sanghvi College of Engineering
+
+GitHub: https://github.com/aaditya-hamirani07
+
+## 📄 License
+
+This project is intended for learning, experimentation, and further development.
