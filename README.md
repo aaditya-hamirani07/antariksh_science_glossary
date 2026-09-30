@@ -110,27 +110,3 @@ This project uses basic Python concepts such as:
 The glossary was created for maintaining scientific terminology encountered during research-paper reading, particularly in areas related to **space science, astronomy, and scientific research**.
 
 It provides a quick way to record unfamiliar terms and refer back to their meanings later.
-
-## 🔮 Future Improvements
-
-- [ ] Add categories for different scientific fields
-- [ ] Add edit and delete functionality
-- [ ] Add case-insensitive search
-- [ ] Add partial-word search
-- [ ] Add examples for each term
-- [ ] Add timestamps
-- [ ] Add a GUI
-- [ ] Convert it into a web-based glossary
-
-## 👨‍💻 Author
-
-**Aaditya Hamirani**
-
-B.Tech Artificial Intelligence & Machine Learning  
-Dwarkadas J. Sanghvi College of Engineering
-
-GitHub: https://github.com/aaditya-hamirani07
-
-## 📄 License
-
-This project is intended for learning, experimentation, and further development.
